@@ -1,0 +1,76 @@
+{
+  "common": {
+    "appName": "Cryptolott",
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "retry": "Retry",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "back": "Back",
+    "next": "Next",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit"
+  },
+  "header": {
+    "home": "Home",
+    "games": "Games",
+    "results": "Results",
+    "account": "Account",
+    "balance": "Balance",
+    "deposit": "Deposit",
+    "withdraw": "Withdraw",
+    "downloadQR": "Download QR"
+  },
+  "home": {
+    "welcome": "Welcome",
+    "jackpotValue": "Jackpot Value",
+    "playNow": "Play Now",
+    "nextDraw": "Next Draw",
+    "timeRemaining": "Time Remaining",
+    "drawToday": "Draw Today",
+    "draw": "Draw"
+  },
+  "game": {
+    "power655": "Power 6/55",
+    "selectNumbers": "Select Numbers",
+    "chooseNumbers": "Choose {count} numbers from 01 to {max}",
+    "ticketPrice": "Ticket Price",
+    "estimatedPrice": "Estimated Price",
+    "buyTicket": "Buy Ticket",
+    "addLine": "Add Line",
+    "removeLine": "Remove",
+    "quickPick": "Quick Pick",
+    "luckyPick": "Lucky Pick",
+    "favorites": "Favorites",
+    "customPick": "Custom Pick",
+    "lineLabel": "Line {label}",
+    "selectedNumbers": "{count} numbers selected",
+    "clearAll": "Clear All",
+    "playMode": "Play Mode",
+    "basic": "Basic",
+    "drawDate": "Draw Date",
+    "luckyMessage": "Let fortune choose your lucky numbers...",
+    "confirm": "Confirm"
+  },
+  "payment": {
+    "title": "Payment",
+    "selectMethod": "Select Payment Method",
+    "selectPeriod": "Select Draw Period",
+    "currentDraw": "Current Draw",
+    "multiDraw": "Multi-draw",
+    "customDraw": "Custom Draws",
+    "total": "Total Payment",
+    "prizeBalance": "Prize Balance",
+    "addMethod": "Add Payment Method",
+    "smsBooking": "SMS Booking",
+    "newBadge": "New",
+    "contribution": "With every {amount} ticket purchase, you contribute {contribution} to the community fund",
+    "ticketDetails": "Ticket booking details",
+    "default": "Default"
+  },
+  "ticket": {
+    "favorite": "Favorite",
+    "unfavorite": "Remove from favorites"
+  }
+}
