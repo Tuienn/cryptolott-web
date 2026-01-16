@@ -35,8 +35,8 @@ export function PaymentPage() {
     const handleSubmitPayment = () => {
         // In real app, process payment
         toast({
-            title: 'Payment submitted successfully!',
-            description: 'You will receive a confirmation email shortly.'
+            title: t('paymentSuccess'),
+            description: t('paymentSuccessDesc')
         })
         router.push(`/${locale}`)
     }
@@ -93,26 +93,24 @@ export function PaymentPage() {
                             className='border-border w-full justify-between rounded-lg border bg-white px-4'
                         >
                             <span className='flex items-center gap-2 text-sm'>
-                                <MessageSquare className='size-4 text-amber-500' />
+                                <MessageSquare className='text-amber-500' />
                                 {t('ticketDetails')}
                             </span>
-                            <ChevronDown
-                                className={`size-4 transition-transform ${isDetailsOpen ? 'rotate-180' : ''}`}
-                            />
+                            <ChevronDown className={`transition-transform ${isDetailsOpen ? 'rotate-180' : ''}`} />
                         </Button>
                     </CollapsibleTrigger>
                     <CollapsibleContent className='border-border mt-2 rounded-lg border bg-white p-4'>
                         <div className='space-y-2 text-sm'>
                             <div className='flex justify-between'>
-                                <span className='text-muted-foreground'>Game:</span>
+                                <span className='text-muted-foreground'>{t('game')}:</span>
                                 <span className='font-medium'>{mockGame.name}</span>
                             </div>
                             <div className='flex justify-between'>
-                                <span className='text-muted-foreground'>Lines:</span>
+                                <span className='text-muted-foreground'>{t('lines')}:</span>
                                 <span className='font-medium'>{ticketLinesCount}</span>
                             </div>
                             <div className='flex justify-between'>
-                                <span className='text-muted-foreground'>Price per line:</span>
+                                <span className='text-muted-foreground'>{t('pricePerLine')}:</span>
                                 <span className='font-medium'>{formatCurrency(mockGame.pricePerLine)}</span>
                             </div>
                         </div>
@@ -128,13 +126,13 @@ export function PaymentPage() {
                 </div>
 
                 {/* Contribution message */}
-                <div className='mt-3 flex items-start gap-3 rounded-lg bg-amber-50 p-3'>
+                <div className='mt-3 flex items-center gap-3 rounded-lg bg-amber-50 p-3'>
                     <div className='shrink-0 text-2xl'>🎉</div>
                     <p className='text-muted-foreground text-sm'>
-                        <span className='text-primary'>With every {formatCurrency(10000)}</span> ticket purchase, you
-                        contribute{' '}
-                        <span className='text-foreground font-medium'>{formatCurrency(contributionAmount)}</span> to the
-                        community fund
+                        {t('contribution', {
+                            amount: formatCurrency(10000),
+                            contribution: formatCurrency(contributionAmount)
+                        })}
                     </p>
                 </div>
             </div>

@@ -178,11 +178,11 @@ export function GameDetailPage({ slug }: GameDetailPageProps) {
             <div className='px-4'>
                 <Button
                     onClick={handleLuckyPick}
-                    className='from-primary flex w-full items-center justify-center gap-2 rounded-full bg-gradient-to-r to-red-500 px-6 py-3 text-sm font-medium text-white shadow-lg transition-transform active:scale-[0.98]'
+                    size='lg'
+                    className='from-primary w-full rounded-full bg-linear-to-r to-red-500 text-white shadow-lg transition-transform'
                 >
-                    <Sparkles className='size-4' />
+                    <Sparkles />
                     {t('luckyMessage')}
-                    <span className='ml-1 text-lg'>🧧</span>
                 </Button>
             </div>
 
@@ -190,11 +190,12 @@ export function GameDetailPage({ slug }: GameDetailPageProps) {
             <div className='px-4 pt-3'>
                 <Button
                     variant='outline'
-                    className='w-full gap-2 border-dashed bg-transparent'
+                    size='lg'
+                    className='text-primary border-primary hover:bg-primary/10 w-full rounded-full border-dashed bg-transparent'
                     onClick={handleAddLine}
                     disabled={lines.length >= 100}
                 >
-                    <Plus className='size-4' />
+                    <Plus />
                     {t('addLine')}
                 </Button>
             </div>

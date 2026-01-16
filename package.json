@@ -1,5 +1,5 @@
 {
-    "name": "my-v0-project",
+    "name": "Cryptolott",
     "version": "0.1.0",
     "private": true,
     "scripts": {
@@ -66,6 +66,7 @@
         "@types/node": "^22",
         "@types/react": "^19",
         "@types/react-dom": "^19",
+        "babel-plugin-react-compiler": "^1.0.0",
         "postcss": "^8.5",
         "prettier": "^3.8.0",
         "prettier-plugin-tailwindcss": "^0.7.2",

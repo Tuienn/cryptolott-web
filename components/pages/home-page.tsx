@@ -5,7 +5,7 @@ export function HomePage() {
     return (
         <div className='flex flex-col gap-6 pb-6'>
             {/* Banner Section */}
-            <div className='from-primary relative aspect-[2/1] w-full overflow-hidden bg-gradient-to-br via-red-300 to-orange-300'>
+            <div className='from-primary relative aspect-2/1 w-full overflow-hidden bg-linear-to-br via-red-300 to-orange-300'>
                 <div className='absolute inset-0 flex items-center justify-center'>
                     <div className='text-center text-white'>
                         <p className='text-4xl font-bold md:text-5xl'>2026</p>
@@ -13,7 +13,7 @@ export function HomePage() {
                     </div>
                 </div>
                 {/* Decorative elements */}
-                <div className='from-background absolute right-0 bottom-0 left-0 h-8 bg-gradient-to-t to-transparent' />
+                <div className='from-background absolute right-0 bottom-0 left-0 h-8 bg-linear-to-t to-transparent' />
             </div>
 
             {/* Pagination dots */}

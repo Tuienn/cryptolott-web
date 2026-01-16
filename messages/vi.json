@@ -18,6 +18,7 @@
         "results": "Kết quả",
         "account": "Tài khoản",
         "balance": "Số dư",
+        "balanceLabel": "Số dư",
         "deposit": "Nạp tiền",
         "withdraw": "Rút tiền",
         "downloadQR": "Tải QR nạp"
@@ -68,7 +69,12 @@
         "newBadge": "Mới ra mắt",
         "contribution": "Với mỗi {amount} mua vé, bạn đã đóng góp gần {contribution} vào Ngân sách cộng đồng",
         "ticketDetails": "Chi tiết tin nhắn đặt vé",
-        "default": "Mặc định"
+        "default": "Mặc định",
+        "paymentSuccess": "Thanh toán thành công!",
+        "paymentSuccessDesc": "Bạn sẽ nhận được email xác nhận trong giây lát.",
+        "game": "Trò chơi",
+        "lines": "Số dãy",
+        "pricePerLine": "Giá mỗi dãy"
     },
     "ticket": {
         "favorite": "Yêu thích",

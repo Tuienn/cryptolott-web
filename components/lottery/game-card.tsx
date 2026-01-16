@@ -58,7 +58,7 @@ export function GameCard({ game, className }: GameCardProps) {
     return (
         <Card
             className={cn(
-                'gap-0 overflow-hidden border-none bg-gradient-to-br from-amber-50 to-orange-50 py-0 shadow-md',
+                'gap-0 overflow-hidden border-none bg-linear-to-br from-amber-50 to-orange-50 py-0 shadow-md',
                 className
             )}
         >
@@ -75,7 +75,7 @@ export function GameCard({ game, className }: GameCardProps) {
                 {/* Game info */}
                 <div className='flex items-center gap-4 p-4'>
                     {/* Logo placeholder */}
-                    <div className='flex size-16 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-yellow-400 to-orange-500'>
+                    <div className='flex size-16 shrink-0 items-center justify-center rounded-full bg-linear-to-br from-yellow-400 to-orange-500'>
                         <span className='text-lg font-bold text-white'>{game.name.split(' ')[0]}</span>
                     </div>
 

@@ -145,11 +145,11 @@ export function NumberSelectPage({ slug }: NumberSelectPageProps) {
                 {/* Action Buttons */}
                 <div className='flex items-center gap-3 px-4 pb-4'>
                     <Button variant='outline' className='flex-1 gap-2 bg-white' onClick={handleAddLine}>
-                        <Plus className='size-4' />
+                        <Plus />
                         {t('addLine')}
                     </Button>
                     <Button variant='outline' className='flex-1 gap-2 bg-white' onClick={handleQuickPick}>
-                        <Sparkles className='size-4' />
+                        <Sparkles />
                         {t('luckyPick')}
                     </Button>
                 </div>

@@ -69,12 +69,12 @@ export function TicketLine({
                 <div className='flex items-center gap-1'>
                     {onToggleFavorite && isComplete && (
                         <Button variant='ghost' size='icon' className='size-8' onClick={onToggleFavorite}>
-                            <Heart className={cn('size-4', line.isFavorite && 'fill-red-500 text-red-500')} />
+                            <Heart className={cn(line.isFavorite && 'fill-red-500 text-red-500')} />
                         </Button>
                     )}
                     {isEmpty && onQuickPick && (
                         <Button variant='ghost' size='icon' className='text-primary size-8' onClick={onQuickPick}>
-                            <RefreshCw className='size-4' />
+                            <RefreshCw />
                         </Button>
                     )}
                     {onDelete && (
@@ -84,7 +84,7 @@ export function TicketLine({
                             className='text-muted-foreground hover:text-destructive size-8'
                             onClick={onDelete}
                         >
-                            <Trash2 className='size-4' />
+                            <Trash2 />
                         </Button>
                     )}
                 </div>

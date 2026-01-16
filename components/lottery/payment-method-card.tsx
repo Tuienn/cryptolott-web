@@ -1,4 +1,5 @@
 import { Wallet, Building2, Plus } from 'lucide-react'
+import { useTranslations } from 'next-intl'
 import { cn } from '@/lib/utils'
 import { Card, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
@@ -14,6 +15,7 @@ interface PaymentMethodCardProps {
 }
 
 export function PaymentMethodCard({ method, isSelected, onSelect, className }: PaymentMethodCardProps) {
+    const t = useTranslations()
     const Icon = method.type === 'balance' ? Wallet : Building2
 
     return (
@@ -31,22 +33,24 @@ export function PaymentMethodCard({ method, isSelected, onSelect, className }: P
                         <div className='flex items-center gap-2'>
                             {method.isDefault && (
                                 <Badge variant='secondary' className='text-xs'>
-                                    Default
+                                    {t('payment.default')}
                                 </Badge>
                             )}
                             <span className='text-sm font-medium'>{method.name}</span>
                         </div>
                         {method.balance !== undefined && (
-                            <p className='text-muted-foreground text-sm'>Balance: {formatCurrency(method.balance)}</p>
+                            <p className='text-muted-foreground text-sm'>
+                                {t('header.balanceLabel')}: {formatCurrency(method.balance)}
+                            </p>
                         )}
 
                         {method.type === 'balance' && (
                             <div className='mt-2 flex gap-2'>
                                 <Button size='sm' className='h-8'>
-                                    Deposit
+                                    {t('header.deposit')}
                                 </Button>
                                 <Button size='sm' variant='outline' className='h-8 bg-transparent'>
-                                    Download QR
+                                    {t('header.downloadQR')}
                                 </Button>
                             </div>
                         )}
@@ -78,7 +82,7 @@ interface AddPaymentButtonProps {
 export function AddPaymentButton({ onClick, className }: AddPaymentButtonProps) {
     return (
         <Button variant='outline' size='icon' className={cn('size-8 rounded-full', className)} onClick={onClick}>
-            <Plus className='size-4' />
+            <Plus />
         </Button>
     )
 }

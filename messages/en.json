@@ -18,6 +18,7 @@
         "results": "Results",
         "account": "Account",
         "balance": "Balance",
+        "balanceLabel": "Balance",
         "deposit": "Deposit",
         "withdraw": "Withdraw",
         "downloadQR": "Download QR"
@@ -68,7 +69,12 @@
         "newBadge": "New",
         "contribution": "With every {amount} ticket purchase, you contribute {contribution} to the community fund",
         "ticketDetails": "Ticket booking details",
-        "default": "Default"
+        "default": "Default",
+        "paymentSuccess": "Payment submitted successfully!",
+        "paymentSuccessDesc": "You will receive a confirmation email shortly.",
+        "game": "Game",
+        "lines": "Lines",
+        "pricePerLine": "Price per line"
     },
     "ticket": {
         "favorite": "Favorite",

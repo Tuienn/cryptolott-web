@@ -23,8 +23,13 @@ export function Header({ showBackButton, title }: HeaderProps) {
                 {/* Top bar with user info */}
                 <div className='flex items-center justify-between px-4 py-3'>
                     {showBackButton ? (
-                        <Button variant='ghost' size='icon' onClick={() => router.back()}>
-                            <ChevronLeft className='h-6 w-6' />
+                        <Button
+                            variant='ghost'
+                            size='icon'
+                            onClick={() => router.back()}
+                            className='text-primary-foreground hover:bg-primary-foreground/10'
+                        >
+                            <ChevronLeft />
                         </Button>
                     ) : (
                         <div className='flex items-center gap-3'>
@@ -48,7 +53,7 @@ export function Header({ showBackButton, title }: HeaderProps) {
                                 size='icon'
                                 className='text-primary-foreground hover:bg-primary-foreground/10'
                             >
-                                <User className='h-5 w-5' />
+                                <User />
                             </Button>
                         </div>
                     )}
@@ -63,21 +68,21 @@ export function Header({ showBackButton, title }: HeaderProps) {
                             variant='outline'
                             className='border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 flex-1 bg-transparent'
                         >
-                            <Wallet className='mr-2 h-4 w-4' />
+                            <Wallet />
                             {t('header.withdraw')}
                         </Button>
                         <Button
                             variant='outline'
                             className='border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 flex-1 bg-transparent'
                         >
-                            <Wallet className='mr-2 h-4 w-4' />
+                            <Wallet />
                             {t('header.deposit')}
                         </Button>
                         <Button
                             variant='outline'
                             className='border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 bg-transparent'
                         >
-                            <QrCode className='h-4 w-4' />
+                            <QrCode />
                         </Button>
                     </div>
                 )}
